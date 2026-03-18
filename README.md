@@ -3,9 +3,10 @@
 
 
 #  Intelligent Data Analyzer
-
 > Upload any CSV and get instant AI-powered insights!
 
+## Live Demo
+ intelligent-data-analyzer.streamlit.app (click here to try it)
 
 ##  Features
 - ✅ Automated Data Cleaning & Profiling
