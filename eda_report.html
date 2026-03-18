@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Data Analyzer Report</title>
+  <style>
+    body { background: #0d1117; color: #e6edf3; font-family: Arial, sans-serif; padding: 2rem; }
+    h1 { color: #7c3aed; }
+    h2 { color: #58a6ff; border-bottom: 1px solid #30363d; padding-bottom: 0.5rem; }
+    .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin: 1.5rem 0; }
+    .card { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 1.25rem; text-align: center; }
+    .card .value { font-size: 2rem; font-weight: bold; color: #7c3aed; }
+    .card .label { font-size: 0.8rem; color: #8b949e; margin-top: 0.25rem; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+    th { background: #161b22; padding: 0.6rem; text-align: left; color: #58a6ff; }
+    td { padding: 0.5rem; border-bottom: 1px solid #30363d; }
+    .links a { color: #58a6ff; display: block; margin: 0.5rem 0; font-size: 1rem; }
+  </style>
+</head>
+<body>
+  <h1>🧠 Intelligent Data Analyzer Report</h1>
+  <p style="color:#8b949e">Generated: 2026-03-18 22:43:33 | Dataset: Titanic</p>
+
+  <div class="grid">
+    <div class="card"><div class="value">891</div><div class="label">Total Rows</div></div>
+    <div class="card"><div class="value">8</div><div class="label">Columns</div></div>
+    <div class="card"><div class="value">82.68%</div><div class="label">Best Accuracy</div></div>
+    <div class="card"><div class="value">Random Forest</div><div class="label">Best Model</div></div>
+  </div>
+
+  <h2>🏆 AutoML Leaderboard</h2>
+  <table border="1" class="dataframe table">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Model</th>
+      <th>Test Acc</th>
+      <th>CV Acc</th>
+      <th>AUC</th>
+      <th>Time(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>Random Forest</td>
+      <td>0.8268</td>
+      <td>0.8076</td>
+      <td>0.8277</td>
+      <td>0.87</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>XGBoost</td>
+      <td>0.8101</td>
+      <td>0.8006</td>
+      <td>0.8067</td>
+      <td>0.31</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Logistic Regression</td>
+      <td>0.7989</td>
+      <td>0.7964</td>
+      <td>0.8519</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>LightGBM</td>
+      <td>0.7989</td>
+      <td>0.8118</td>
+      <td>0.8117</td>
+      <td>0.31</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Gradient Boosting</td>
+      <td>0.7989</td>
+      <td>0.8258</td>
+      <td>0.8203</td>
+      <td>0.76</td>
+    </tr>
+  </tbody>
+</table>
+
+  <h2>🔗 Interactive Charts</h2>
+  <div class="links">
+    <a href="correlation_heatmap.html">📈 Correlation Heatmap</a>
+    <a href="feature_importance.html">🧠 Feature Importance</a>
+    <a href="anomaly_detection.html">🚨 Anomaly Detection</a>
+  </div>
+
+  <footer style="margin-top:3rem; color:#8b949e; text-align:center;">
+    Built with Python · Scikit-learn · XGBoost · LightGBM · Plotly
+  </footer>
+</body>
+</html>
